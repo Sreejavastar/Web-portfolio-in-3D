@@ -28,9 +28,7 @@ const Contact = () => {
     });
   };
 
-  // template_0ziv7pl
-  // NXBrgieaC62rSxaWm
-  // service_z5fuirq
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -38,11 +36,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        'service_z5fuirq',
-
-        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        'template_0ziv7pl',
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Sreeja Ghosh",
@@ -50,9 +45,7 @@ const Contact = () => {
           to_email: "ghoshsreeja02@gmail.com",
           message: form.message,
         },
-        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-
-        'NXBrgieaC62rSxaWm'        
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
