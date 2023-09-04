@@ -1,0 +1,18 @@
+/* Define the track (background) color */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+    background: linear-gradient(to bottom, black, yellow);
+  }
+  
+  /* Define the thumb (draggable part) color */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 118, 243); /* Color of the thumb */
+    scroll-behavior: smooth;
+  }
+  
+  /* Define the corner of the scrollbar */
+  ::-webkit-scrollbar-corner {
+    background-color:black; /* Color of the scrollbar corner */
+    width: 54px;
+  }
+  
